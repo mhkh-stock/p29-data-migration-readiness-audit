@@ -1,0 +1,135 @@
+source_table,source_row_no,source_key,reason,detail
+customers,41,C-041,duplicate_cust_code,cust_code C-041 already used by an earlier row — later copy rejected
+customers,57,C-057,unparseable_since_date,since_date '32/13/2021' is not a real date in any legacy format
+customers,59,C-059,unparseable_credit_limit,credit_limit 'TBD' is not a number
+customers,60,C-060,unparseable_credit_limit,"credit_limit '1,2x,000' is not a number"
+customers,62,C-003,duplicate_cust_code,cust_code C-003 already used by an earlier row — later copy rejected
+customers,77,C-077,unparseable_since_date,since_date 'not-a-date' is not a real date in any legacy format
+customers,90,C-067,duplicate_cust_code,cust_code C-067 already used by an earlier row — later copy rejected
+customers,100,C-100,unparseable_credit_limit,credit_limit 'n/a' is not a number
+customers,107,C-107,duplicate_cust_code,cust_code C-107 already used by an earlier row — later copy rejected
+customers,109,C-040,duplicate_cust_code,cust_code C-040 already used by an earlier row — later copy rejected
+customers,127,C-127,unparseable_credit_limit,credit_limit '' is not a number
+customers,136,C-121,duplicate_cust_code,cust_code C-121 already used by an earlier row — later copy rejected
+customers,140,C-140,unparseable_since_date,since_date '' is not a real date in any legacy format
+products,2,P-002,missing_or_zero_price,"unit_price '' is blank, zero or not a number"
+products,4,P-004,duplicate_prod_code_normalised,"prod_code 'P-004' normalises to P004, already used — later copy rejected"
+products,5,P-005,missing_or_zero_price,"unit_price '0' is blank, zero or not a number"
+products,26,P-026,duplicate_prod_code_normalised,"prod_code 'P-026' normalises to P026, already used — later copy rejected"
+products,32,P-032,missing_or_zero_price,"unit_price '0' is blank, zero or not a number"
+products,37,P-037,missing_or_zero_price,"unit_price '' is blank, zero or not a number"
+products,42,P-042,duplicate_prod_code_normalised,"prod_code 'P-042' normalises to P042, already used — later copy rejected"
+products,50,P-050,duplicate_prod_code_normalised,"prod_code 'P-050' normalises to P050, already used — later copy rejected"
+products,53,P-053,missing_or_zero_price,"unit_price '' is blank, zero or not a number"
+sales,15,B-1015,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,33,B-1033,unparseable_qty,qty '3 pcs' is not a whole number
+sales,35,B-1035,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,42,B-1042,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,44,B-1044,amount_mismatch,"amount PKR 33,151.05 does not equal qty 9 x unit price PKR 3,203.00 (= PKR 28,827.00)"
+sales,48,B-1048,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,51,B-1051,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,54,B-1054,unparseable_bill_date,bill_date '2026-02-30' is not a real date in any legacy format
+sales,75,B-1075,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,83,B-1083,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,91,B-1091,orphan_prod_code,prod_code 'P-902' does not exist in the product file
+sales,93,B-1093,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,97,B-1097,unparseable_or_zero_amount,"amount '-500' is blank, zero, negative or not a number"
+sales,100,B-1100,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,106,B-1106,orphan_cust_code,"cust_code 'C-077' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,114,B-1114,amount_mismatch,"amount PKR 7,405.20 does not equal qty 6 x unit price PKR 1,452.00 (= PKR 8,712.00)"
+sales,132,B-1132,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,140,B-1140,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,145,B-1145,orphan_prod_code,prod_code 'P-901' does not exist in the product file
+sales,146,B-1146,orphan_cust_code,cust_code 'C-905' does not exist in the customer file
+sales,150,B-1150,orphan_prod_code,prod_code 'P-905' does not exist in the product file
+sales,156,B-1156,orphan_cust_code,"cust_code 'C-060' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,157,B-1157,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,172,B-1172,orphan_cust_code,"cust_code 'C-077' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,178,B-1178,orphan_cust_code,"cust_code 'C-127' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,184,B-1184,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,188,B-1188,orphan_cust_code,"cust_code 'C-059' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,193,B-1193,unparseable_bill_date,bill_date '' is not a real date in any legacy format
+sales,209,B-1209,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,220,B-1220,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,224,B-1224,orphan_cust_code,"cust_code 'C-100' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,226,B-1226,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,234,B-1234,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,240,B-1240,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,246,B-1246,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,247,B-1247,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,253,B-1253,orphan_cust_code,"cust_code 'C-127' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,254,B-1254,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,255,B-1255,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,256,B-1256,orphan_cust_code,cust_code 'C-900' does not exist in the customer file
+sales,275,B-1275,orphan_prod_code,prod_code 'P-903' does not exist in the product file
+sales,281,B-1281,duplicate_bill_line,bill B-1281 line for P004 is an exact copy of an earlier line
+sales,285,B-1285,orphan_cust_code,cust_code 'C-907' does not exist in the customer file
+sales,293,B-1293,orphan_cust_code,"cust_code 'C-077' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,296,B-1296,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,299,B-1299,unparseable_qty,qty 'five' is not a whole number
+sales,301,B-1301,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,302,B-1302,orphan_cust_code,cust_code 'C-906' does not exist in the customer file
+sales,317,B-1317,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,319,B-1309,duplicate_bill_line,bill B-1309 line for P-006 is an exact copy of an earlier line
+sales,329,B-1329,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,332,B-1332,amount_mismatch,"amount PKR 23,852.70 does not equal qty 18 x unit price PKR 1,559.00 (= PKR 28,062.00)"
+sales,336,B-1336,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,337,B-1211,duplicate_bill_line,bill B-1211 line for P-009 is an exact copy of an earlier line
+sales,339,B-1339,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,340,B-1340,unparseable_bill_date,bill_date '40/02/2026' is not a real date in any legacy format
+sales,342,B-1342,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,352,B-1352,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,354,B-1354,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,360,B-1360,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,361,B-1361,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,365,B-1365,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,376,B-1376,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,383,B-1383,orphan_cust_code,"cust_code 'C-077' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,391,B-1391,orphan_cust_code,"cust_code 'C-100' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,400,B-1400,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,407,B-1407,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,415,B-1415,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,422,B-1422,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,428,B-1428,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,446,B-1446,unparseable_or_zero_amount,"amount 'n/a' is blank, zero, negative or not a number"
+sales,450,B-1450,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,452,B-1452,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,454,B-1454,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,462,B-1462,orphan_cust_code,"cust_code 'C-100' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,471,B-1471,unparseable_bill_date,bill_date 'not-a-date' is not a real date in any legacy format
+sales,474,B-1474,orphan_cust_code,cust_code 'C-903' does not exist in the customer file
+sales,479,B-1479,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,482,B-1482,amount_mismatch,"amount PKR 3,431.60 does not equal qty 1 x unit price PKR 2,984.00 (= PKR 2,984.00)"
+sales,484,B-1484,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,488,B-1488,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,493,B-1493,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,506,B-1506,orphan_cust_code,cust_code 'C-901' does not exist in the customer file
+sales,508,B-1508,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,511,B-1511,unparseable_or_zero_amount,"amount '0' is blank, zero, negative or not a number"
+sales,512,B-1512,orphan_cust_code,"cust_code 'C-127' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,514,B-1514,orphan_cust_code,"cust_code 'C-060' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,524,B-1524,unparseable_or_zero_amount,"amount '' is blank, zero, negative or not a number"
+sales,531,B-1531,orphan_prod_code,prod_code 'P-904' does not exist in the product file
+sales,534,B-1534,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,541,B-1541,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,546,B-1546,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,555,B-1555,duplicate_bill_line,bill B-1555 line for P026 is an exact copy of an earlier line
+sales,557,B-1557,orphan_cust_code,"cust_code 'C-057' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,558,B-1558,orphan_cust_code,cust_code 'C-904' does not exist in the customer file
+sales,560,B-1560,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,562,B-1562,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,566,B-1566,orphan_cust_code,"cust_code 'C-140' exists in the customer file but its master row failed migration — fix the customer first, then re-run"
+sales,568,B-1568,orphan_prod_code,prod_code 'P-900' does not exist in the product file
+sales,570,B-1570,duplicate_bill_line,bill B-1570 line for P-011 is an exact copy of an earlier line
+sales,573,B-1573,orphan_prod_code,"prod_code 'P-037' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,576,B-1576,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,577,B-1577,unparseable_qty,qty '' is not a whole number
+sales,581,B-1581,amount_mismatch,"amount PKR 22,843.80 does not equal qty 7 x unit price PKR 3,626.00 (= PKR 25,382.00)"
+sales,583,B-1583,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,591,B-1591,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,592,B-1592,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,593,B-1593,orphan_prod_code,"prod_code 'P-053' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,595,B-1595,orphan_prod_code,"prod_code 'P-005' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,597,B-1597,orphan_prod_code,"prod_code 'P-002' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,599,B-1599,orphan_prod_code,"prod_code 'P-032' exists in the product file but its master row failed migration — fix the product first, then re-run"
+sales,600,B-1600,orphan_cust_code,cust_code 'C-902' does not exist in the customer file

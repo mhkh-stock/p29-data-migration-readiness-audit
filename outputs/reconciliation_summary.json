@@ -1,0 +1,105 @@
+{
+  "scenario": "Ravi Traders \u2014 BillPro 2009 (legacy) to CloudERP",
+  "audit_date": "2026-11-25",
+  "verdict": "CONDITIONAL GO",
+  "readiness_pct": 83.46,
+  "source_rows": {
+    "customers": 150,
+    "products": 60,
+    "sales": 600
+  },
+  "target_rows": {
+    "customers": 137,
+    "products": 51,
+    "sales": 488
+  },
+  "quarantined_rows": {
+    "customers": 13,
+    "products": 9,
+    "sales": 112
+  },
+  "total_source_rows": 810,
+  "total_target_rows": 676,
+  "total_quarantined_rows": 134,
+  "sales_readiness_pct": 81.33,
+  "defects_planted": 70,
+  "defects_quarantining_rows": 57,
+  "warnings_migrated": 11,
+  "knock_on_orphans": 77,
+  "quarantine_by_reason": [
+    {
+      "source_table": "customers",
+      "reason": "duplicate_cust_code",
+      "rows": 6
+    },
+    {
+      "source_table": "customers",
+      "reason": "unparseable_credit_limit",
+      "rows": 4
+    },
+    {
+      "source_table": "customers",
+      "reason": "unparseable_since_date",
+      "rows": 3
+    },
+    {
+      "source_table": "products",
+      "reason": "missing_or_zero_price",
+      "rows": 5
+    },
+    {
+      "source_table": "products",
+      "reason": "duplicate_prod_code_normalised",
+      "rows": 4
+    },
+    {
+      "source_table": "sales",
+      "reason": "orphan_prod_code",
+      "rows": 58
+    },
+    {
+      "source_table": "sales",
+      "reason": "orphan_cust_code",
+      "rows": 33
+    },
+    {
+      "source_table": "sales",
+      "reason": "duplicate_bill_line",
+      "rows": 5
+    },
+    {
+      "source_table": "sales",
+      "reason": "amount_mismatch",
+      "rows": 5
+    },
+    {
+      "source_table": "sales",
+      "reason": "unparseable_or_zero_amount",
+      "rows": 4
+    },
+    {
+      "source_table": "sales",
+      "reason": "unparseable_bill_date",
+      "rows": 4
+    },
+    {
+      "source_table": "sales",
+      "reason": "unparseable_qty",
+      "rows": 3
+    }
+  ],
+  "money": {
+    "sales_source_parseable_pkr": 16666459.35,
+    "sales_target_pkr": 13830124.0,
+    "sales_quarantined_pkr": 2836335.35,
+    "sales_reconciled": true,
+    "credit_migrated_source_pkr": 138187000.0,
+    "credit_target_pkr": 138187000.0,
+    "credit_reconciled": true
+  },
+  "mapping_rows": 21,
+  "mapping_coverage_pct": 100.0,
+  "target_orphans": 0,
+  "target_mismatches": 0,
+  "target_duplicates": 0
+}

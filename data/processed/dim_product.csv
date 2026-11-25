@@ -1,0 +1,52 @@
+product_key,prod_code,prod_name,category,unit_price_pkr,uom
+1,P004,LED Bulb 9W,Electronics,1857.0,pcs
+2,P026,Electric Iron,Electronics,4255.0,box
+3,P006,Non-stick Tawa,Home & Kitchen,4939.0,set
+4,P007,Dinner Set 24pc,Home & Kitchen,3363.0,box
+5,P008,Steel Glass Set,Home & Kitchen,2286.0,pcs
+6,P009,Basmati Rice 5kg,Groceries,3626.0,set
+7,P042,Cooking Oil 5L,Groceries,1025.0,pcs
+8,P011,Sugar 5kg,Groceries,3203.0,set
+9,P012,Washing Powder 3kg,Groceries,2822.0,pcs
+10,P050,Cotton Lawn 3pc,Clothing,3187.0,pcs
+11,P014,Men Kurta,Clothing,2365.0,pcs
+12,P015,Bed Sheet Double,Clothing,3081.0,pcs
+13,P016,Towel Set,Clothing,1103.0,set
+14,P017,Hammer 500g,Hardware,227.0,box
+15,P018,Screwdriver Set,Hardware,265.0,pcs
+16,P019,PVC Pipe 4in 10ft,Hardware,1061.0,box
+17,P020,Wall Paint 4L,Hardware,3483.0,pcs
+18,P021,Cooking Oil 5L (Variant 1),Groceries,586.0,pcs
+19,P022,Hammer 500g (Variant 2),Hardware,2932.0,pcs
+20,P023,Steel Glass Set (Variant 3),Home & Kitchen,6483.0,pcs
+21,P024,Non-stick Tawa (Variant 4),Home & Kitchen,539.0,pcs
+22,P025,Screwdriver Set (Variant 5),Hardware,1763.0,pcs
+23,P027,Wall Paint 4L (Variant 7),Hardware,557.0,pcs
+24,P028,Men Kurta (Variant 8),Clothing,2984.0,pcs
+25,P029,Extension Board 5m (Variant 9),Electronics,5226.0,pcs
+26,P030,Men Kurta (Variant 10),Uncategorised,2777.0,pcs
+27,P031,Cooking Oil 5L (Variant 11),Groceries,3096.0,pcs
+28,P033,Screwdriver Set (Variant 13),Hardware,1559.0,pcs
+29,P034,Men Kurta (Variant 14),Clothing,668.0,pcs
+30,P035,Rice Cooker 1.8L (Variant 15),Home & Kitchen,1187.0,pcs
+31,P036,Dinner Set 24pc (Variant 16),Uncategorised,4903.0,pcs
+32,P038,Screwdriver Set (Variant 18),Uncategorised,498.0,pcs
+33,P039,Rice Cooker 1.8L (Variant 19),Home & Kitchen,3148.0,pcs
+34,P040,PVC Pipe 4in 10ft (Variant 20),Hardware,2604.0,pcs
+35,P041,Cotton Lawn 3pc (Variant 21),Clothing,1507.0,pcs
+36,P043,Steel Glass Set (Variant 23),Home & Kitchen,2752.0,pcs
+37,P044,Towel Set (Variant 24),Clothing,4109.0,pcs
+38,P045,LED Bulb 9W (Variant 25),Electronics,7815.0,pcs
+39,P046,Basmati Rice 5kg (Variant 26),Groceries,3614.0,pcs
+40,P047,Cotton Lawn 3pc (Variant 27),Clothing,1211.0,pcs
+41,P048,Non-stick Tawa (Variant 28),Home & Kitchen,4305.0,pcs
+42,P049,Extension Board 5m (Variant 29),Electronics,1922.0,pcs
+43,P051,Bed Sheet Double (Variant 31),Clothing,4013.0,pcs
+44,P052,Washing Powder 3kg (Variant 32),Groceries,1771.0,pcs
+45,P054,Towel Set (Variant 34),Clothing,1219.0,pcs
+46,P055,Towel Set (Variant 35),Clothing,1210.0,pcs
+47,P056,Dinner Set 24pc (Variant 36),Home & Kitchen,3069.0,pcs
+48,P057,Cotton Lawn 3pc (Variant 37),Clothing,1014.0,pcs
+49,P058,Screwdriver Set (Variant 38),Hardware,2058.0,pcs
+50,P059,Sugar 5kg (Variant 39),Groceries,1626.0,pcs
+51,P060,Towel Set (Variant 40),Clothing,3997.0,pcs

@@ -1,0 +1,68 @@
+[
+  {
+    "source_table": "customers",
+    "source_row_no": 3,
+    "source_key": "C-003",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 30,
+    "source_key": "C-030",
+    "detail": "status 'maybe' is not Active/Inactive \u2014 migrates as Active"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 40,
+    "source_key": "C-040",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 53,
+    "source_key": "C-053",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 67,
+    "source_key": "C-067",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 81,
+    "source_key": "C-081",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 121,
+    "source_key": "C-121",
+    "detail": "blank phone \u2014 migrates as NULL"
+  },
+  {
+    "source_table": "customers",
+    "source_row_no": 122,
+    "source_key": "C-122",
+    "detail": "status 'X' is not Active/Inactive \u2014 migrates as Active"
+  },
+  {
+    "source_table": "products",
+    "source_row_no": 30,
+    "source_key": "P-030",
+    "detail": "blank category \u2014 migrates as 'Uncategorised'"
+  },
+  {
+    "source_table": "products",
+    "source_row_no": 36,
+    "source_key": "P-036",
+    "detail": "blank category \u2014 migrates as 'Uncategorised'"
+  },
+  {
+    "source_table": "products",
+    "source_row_no": 38,
+    "source_key": "P-038",
+    "detail": "blank category \u2014 migrates as 'Uncategorised'"
+  }
+]
